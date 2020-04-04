@@ -37,6 +37,8 @@ Route::group(['middleware' => 'auth'] ,function () {
     Route::group(['prefix' => 'toplantilar'], function () {
         Route::get('/gelecek_toplantilar','toplantilar\gelecek_toplantilar_controller@icerik')->name('gelecek_toplantilar');
         Route::get('/toplanti_olustur','toplantilar\toplanti_olustur_controller@icerik')->name('toplanti_olustur');
+        Route::post('/toplanti_kaydet','toplantilar\toplanti_olustur_controller@toplanti_kaydet')->name('toplanti_kaydet');
+        Route::post('/toplanti_sil/{id}','toplantilar\gelecek_toplantilar_controller@toplanti_sil')->name('toplanti_sil');
     });
 
     Route::group(['prefix' => 'uretimhane'], function () {
@@ -44,6 +46,7 @@ Route::group(['middleware' => 'auth'] ,function () {
         Route::post('is_emri_ver','uretimhane\is_emri_ver_controller@kaydet')->name('is_emrini_kaydet');
         Route::get('/is_tanimi','uretimhane\is_tanimi_controller@icerik')->name('is_tanimi');
         Route::get('/tezgah_yarat','uretimhane\tezgah_yarat_controller@icerik')->name('tezgah_yarat');
+        Route::post('/tezgah_kaydet','uretimhane\tezgah_yarat_controller@tezgah_kaydet')->name('tezgah_kaydet');
         Route::get('/sureci_baslat/{id}','uretimhane\sureci_baslat_controller@sureci_baslat')->name('sureci_baslat');
         Route::get('/surecler','uretimhane\surec_controller@icerik')->name('surec');
         Route::get('/surec_detay','uretimhane\surec_controller@icerik_detay')->name('surec_detay');

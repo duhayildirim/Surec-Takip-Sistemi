@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateGelecekToplatilarTable extends Migration
+class CreateGelecekToplantilarTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateGelecekToplatilarTable extends Migration
      */
     public function up()
     {
-        Schema::create('gelecek_toplatilar', function (Blueprint $table) {
+        Schema::create('gelecek_toplantilar', function (Blueprint $table) {
             $table->id();
             $table->text('konu');
             $table->text('aciklama');
@@ -32,6 +32,6 @@ class CreateGelecekToplatilarTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('gelecek_toplatilar');
+        Schema::dropIfExists('gelecek_toplantilar');
     }
 }

@@ -19,6 +19,8 @@ class gelecek_toplantilar extends Model
 
     const DELETED_AT = 'silinme_tarihi';
 
+
+
     public function kullanicilar()
     {
         return $this -> hasMany(toplantilar_calisanlar::class,'gelecek_toplantilar_id');

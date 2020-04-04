@@ -21,10 +21,10 @@ class tezgahlar extends Model
 
     public function surecler()
     {
-        return $this -> hasMany(surecler_tezgahlar::class,'tezgahlar_id');
+        return $this -> hasMany(surecler_tezgahlar::class,'tezgah_id');
     }
     public function kullanicilar()
     {
-        return $this -> hasMany(tezgahlar_calisanlar::class,'tezgahlar_id');
+        return $this -> hasMany(tezgahlar_calisanlar::class,'tezgah_id');
     }
 }

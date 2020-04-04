@@ -41,41 +41,47 @@
                             </ul>
                         </div>
                     @endif
-                    <form class="form-horizontal form-label-left" action="#" method="post" enctype="multipart/form-data">
+                    <form class="form-horizontal form-label-left" action="{{route('toplanti_kaydet')}}" method="post" enctype="multipart/form-data">
                         {{csrf_field()}}
                         <div class="form-group">
                             <h3>Toplantının Konusu</h3>
                             <div class="col-sm-12">
-                                <input type="text" class="form-control" id="title" name="price" required>
+                                <input name="konu" type="text" class="form-control" id="title"  required>
                             </div>
+                            <p> &nbsp;</p>
                         </div>
                         <div class="form-group">
                             <h3>Toplantının Açıklaması</h3>
                             <div class="col-sm-12">
-                                <input type="text" class="form-control" id="title" name="name" required>
+                                <input name="aciklama" type="text" class="form-control" id="title" required>
                             </div>
+                            <p> &nbsp;</p>
                         </div>
                         <div class="form-group">
                             <h3>Toplantıya Kimler Katılacak?</h3>
                             <div class="col-sm-12">
-                                <select name="gender" class="form-control form-control-lg">
-                                    <option value="" disabled selected hidden>Çalışanları Seçin</option>
-                                    <option value="Kadin">Müdür</option>
-                                    <option value="Erkek">İşçi</option>
+                                <label for="card-number" class="form-label"></label>
+                                <select name="calisan_id[]" data-placeholder="Çalışanları Seçin" class="chosen-select" multiple="" tabindex="-1" required>
+                                    @foreach($calisanlar as $calisan)
+                                    <option value="{{$calisan -> id}}">{{$calisan -> ad}} <small> {{$calisan -> soyad}}</small> ({{$calisan -> rol}})</option>
+                                    @endforeach
                                 </select>
+                                <p> &nbsp;</p>
                             </div>
                         </div>
                         <div class="form-group">
                             <h3>Toplantı Tarihi</h3>
                             <div class="col-sm-12">
-                                <input type="text" class="form-control" id="title" name="price" required>
+                                <input type="text" class="form-control" id="title" name="tarih" required>
                             </div>
+                            <p> &nbsp;</p>
                         </div>
                         <div class="form-group">
                             <h3>Toplantı Saati</h3>
                             <div class="col-sm-12">
-                                <input type="text" class="form-control" id="title" name="price" required>
+                                <input type="text" class="form-control" id="title" name="saat" required>
                             </div>
+                            <p> &nbsp;</p>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">

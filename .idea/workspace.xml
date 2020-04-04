@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc759033-75b1-45cc-821b-30afef5422c4" name="Default Changelist" comment="" />
+    <list default="true" id="cc759033-75b1-45cc-821b-30afef5422c4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/surec_takip.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/surec_takip.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/toplantilar/gelecek_toplantilar_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/toplantilar/gelecek_toplantilar_controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/toplantilar/toplanti_olustur_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/toplantilar/toplanti_olustur_controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/tezgah_yarat_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/tezgah_yarat_controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/tezgahina_git/tezgahina_git_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/tezgahina_git/tezgahina_git_controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/gelecek_toplantilar.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/gelecek_toplantilar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/tezgahlar.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/tezgahlar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_03_073117_create_gelecek_toplatilar_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/toplantilar/gelecek_toplantilar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/toplantilar/gelecek_toplantilar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/toplantilar/toplanti_olustur.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/toplantilar/toplanti_olustur.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/uretimhane/tezgah_yarat.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/uretimhane/tezgah_yarat.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/uretimhane/tezgahina_git/tezgahina_git.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/uretimhane/tezgahina_git/tezgahina_git.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +51,7 @@
     <select />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Surec-Takip-Sistemi" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -127,6 +150,7 @@
       <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ZadtiAM0RNeBwr1qKVapOB4Qu5" />
@@ -140,7 +164,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -191,6 +215,7 @@
       <workItem from="1585549042291" duration="62219000" />
       <workItem from="1585808645622" duration="19591000" />
       <workItem from="1585898523347" duration="17108000" />
+      <workItem from="1585992740303" duration="20809000" />
     </task>
     <servers />
   </component>
@@ -242,14 +267,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1585898523052" />
-    <state x="1920" y="85" width="1296" height="846" maximized="true" key="dock-window-1" timestamp="1585901548018">
+    <state x="1920" y="0" width="1296" height="846" maximized="true" key="dock-window-1" timestamp="1586013741486">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state x="1920" y="85" width="1296" height="846" maximized="true" key="dock-window-1/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1585901548018" />
-    <state x="1920" y="0" width="1296" height="1029" maximized="true" key="dock-window-2" timestamp="1585811433031">
+    <state x="1920" y="0" width="1296" height="846" maximized="true" key="dock-window-1/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1586013741486" />
+    <state x="1920" y="0" width="1296" height="846" maximized="true" key="dock-window-2" timestamp="1586023759759">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state x="1920" y="0" width="1296" height="1029" maximized="true" key="dock-window-2/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1585811433031" />
+    <state x="1920" y="0" width="1296" height="846" maximized="true" key="dock-window-2/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1586023759759" />
     <state x="1920" y="55" width="1296" height="846" maximized="true" key="dock-window-3" timestamp="1585845198449">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
@@ -262,9 +287,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1585722371369" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585826407421">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586015100851">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1585826407421" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1586015100851" />
   </component>
 </project>

@@ -12,5 +12,10 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
          $this->call('is_emirleri_seeder');
+         $this->call('kullanicilar_seeder');
+         $this->call('toplanti_olustur_seeder');
+         $this->call('toplantilar_calisanlar_seeder');
+         $this->call('tezgahlar_seeder');
+         $this->call('tezgahlar_calisanlar_seeder');
     }
 }

@@ -18,20 +18,23 @@
             </li>
         </ul>
     </div>
+    @foreach($toplantilar as $toplanti)
     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
         <div class="hpanel hbggreen">
             <div class="panel-body">
                 <div class="text-center content-bg-pro">
-                    <h3>Toplantı Konusu</h3>
+                    <h3>{{$toplanti -> konu}}</h3>
+
                     <p class="text-big font-light">
-                        Saati
+                        {{$toplanti -> saat}}
                     </p>
                     <small>
-                        Açıklaması
+                        {{$toplanti -> aciklama}}
                     </small>
                 </div>
             </div>
         </div>
+
         <div class="hpanel">
             <div class="panel-body">
                 <div class="table-responsive">
@@ -43,14 +46,21 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td>Jul 14, 2013</td>
+                            <td>{{$toplanti -> tarih}}</td>
                         </tr>
                         </tbody>
-                        <button type="button" class="btn btn-danger">İptal Et</button>
-                        <button type="button" class="btn btn-warning">Bu Toplantı Yapıldı</button>
+                        <form action="{{route('toplanti_sil' , $toplanti -> id)}}" method="post">
+                            {{csrf_field()}}
+                        <button type="submit" class="btn btn-danger">İptal Et</button>
+                        </form>
+                        <form action="{{route('toplanti_sil' , $toplanti -> id)}}" method="post">
+                            {{csrf_field()}}
+                        <button type="submit" class="btn btn-warning">Bu Toplantı Yapıldı</button>
+                        </form>
                     </table>
                 </div>
             </div>
         </div>
     </div>
+    @endforeach
 @endsection
