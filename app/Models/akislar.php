@@ -21,6 +21,10 @@ class akislar extends Model
 
     public function surecler()
     {
-        return $this -> hasMany(surecler_akislar::class , 'akislar_id');
+        return $this -> hasMany(surecler_akislar::class , 'akis_id');
+    }
+    public function tezgahlar()
+    {
+        return $this -> hasMany(akislar_tezgahlar::class , 'akis_id');
     }
 }

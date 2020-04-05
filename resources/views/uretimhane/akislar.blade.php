@@ -21,18 +21,30 @@
     <div class="product-cart-area mg-tb-15">
         <div class="container-fluid">
             <div class="row">
+                @if($errors->any())
+                    <div class="alert alert-error">
+                        <ul>
+                            @foreach($errors->all() as $error)
+                                <li>{{$error}}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+                <form action="akis_kaydet" method="post">
+                    {{csrf_field()}}
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="product-cart-inner">
                         <div id="example-basic">
                             <h3>Akış Oluştur</h3>
                             <section>
+
                                 <h1>Akışın Adını Oluştur</h1>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <h3 class="product-cart-dn"></h3>
                                     <div class="payment-details">
                             <div class="form-group">
                                 <label for="card-number" class="form-label"></label>
-                                <input id="name-2" name="name" type="text" class="form-control">
+                                <input id="name-2" name="ad" type="text" class="form-control">
                             </div>
                                     </div>
                                 </div>
@@ -42,184 +54,44 @@
                             <section>
                                 <h1> Bu Akışta Çalışacak Tezgahları Seçin</h1>
                                 <p> &nbsp</p>
+                                @foreach($tezgahlar as $tezgah)
                                 <div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
                                     <h3 class="product-cart-dn"></h3>
                                     <div class="payment-details">
-                                        <h4>TEZGAH 1</h4>
+                                        <h4>{{$tezgah -> ad}}</h4>
                                         <div class="onoffswitch">
-                                            <input type="checkbox"  name="collapsemenu" checked="" class="onoffswitch-checkbox" id="example1">
-                                            <label class="onoffswitch-label" for="example1">
+
+                                            <input type="checkbox"  name="collapsemenu" checked="" class="onoffswitch-checkbox" id="{{$tezgah -> ad}}">
+                                                <label class="onoffswitch-label" for="{{$tezgah -> ad}}">
                                                 <span class="onoffswitch-inner"></span>
                                                 <span class="onoffswitch-switch"></span>
                                             </label>
+
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
-                                    <h3 class="product-cart-dn"></h3>
-                                    <div class="payment-details">
-                                        <h4>TEZGAH 2</h4>
-                                        <div class="onoffswitch">
-                                            <input type="checkbox"  name="collapsemenu" checked="" class="onoffswitch-checkbox" id="example2">
-                                            <label class="onoffswitch-label" for="example2">
-                                                <span class="onoffswitch-inner"></span>
-                                                <span class="onoffswitch-switch"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
-                                    <h3 class="product-cart-dn"></h3>
-                                    <div class="payment-details">
-                                        <h4>TEZGAH 3</h4>
-                                        <div class="onoffswitch">
-                                            <input type="checkbox"  name="collapsemenu" checked="" class="onoffswitch-checkbox" id="example3">
-                                            <label class="onoffswitch-label" for="example3">
-                                                <span class="onoffswitch-inner"></span>
-                                                <span class="onoffswitch-switch"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
-                                    <h3 class="product-cart-dn"></h3>
-                                    <div class="payment-details">
-                                        <h4>TEZGAH 4</h4>
-                                        <div class="onoffswitch">
-                                            <input type="checkbox"  name="collapsemenu" checked="" class="onoffswitch-checkbox" id="example4">
-                                            <label class="onoffswitch-label" for="example4">
-                                                <span class="onoffswitch-inner"></span>
-                                                <span class="onoffswitch-switch"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
-                                    <h3 class="product-cart-dn"></h3>
-                                    <div class="payment-details">
-                                        <h4>TEZGAH 5</h4>
-                                        <div class="onoffswitch">
-                                            <input type="checkbox"  name="collapsemenu" checked="" class="onoffswitch-checkbox" id="example5">
-                                            <label class="onoffswitch-label" for="example5">
-                                                <span class="onoffswitch-inner"></span>
-                                                <span class="onoffswitch-switch"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
-                                    <h3 class="product-cart-dn"></h3>
-                                    <div class="payment-details">
-                                        <h4>TEZGAH 6</h4>
-                                        <div class="onoffswitch">
-                                            <input type="checkbox"  name="collapsemenu" checked="" class="onoffswitch-checkbox" id="example6">
-                                            <label class="onoffswitch-label" for="example6">
-                                                <span class="onoffswitch-inner"></span>
-                                                <span class="onoffswitch-switch"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
-                                    <h3 class="product-cart-dn"></h3>
-                                    <div class="payment-details">
-                                        <h4>TEZGAH 7</h4>
-                                        <div class="onoffswitch">
-                                            <input type="checkbox"  name="collapsemenu" checked="" class="onoffswitch-checkbox" id="example7">
-                                            <label class="onoffswitch-label" for="example7">
-                                                <span class="onoffswitch-inner"></span>
-                                                <span class="onoffswitch-switch"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
-                                    <h3 class="product-cart-dn"></h3>
-                                    <div class="payment-details">
-                                        <h4>TEZGAH 8</h4>
-                                        <div class="onoffswitch">
-                                            <input type="checkbox"  name="collapsemenu" checked="" class="onoffswitch-checkbox" id="example8">
-                                            <label class="onoffswitch-label" for="example8">
-                                                <span class="onoffswitch-inner"></span>
-                                                <span class="onoffswitch-switch"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
-                                    <h3 class="product-cart-dn"></h3>
-                                    <div class="payment-details">
-                                        <h4>TEZGAH 9</h4>
-                                        <div class="onoffswitch">
-                                            <input type="checkbox"  name="collapsemenu" checked="" class="onoffswitch-checkbox" id="example9">
-                                            <label class="onoffswitch-label" for="example9">
-                                                <span class="onoffswitch-inner"></span>
-                                                <span class="onoffswitch-switch"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
-                                    <h3 class="product-cart-dn"></h3>
-                                    <div class="payment-details">
-                                        <h4>TEZGAH 10</h4>
-                                        <div class="onoffswitch">
-                                            <input type="checkbox" name="collapsemenu" checked="" class="onoffswitch-checkbox" id="example10">
-                                            <label class="onoffswitch-label" for="example10">
-                                                <span class="onoffswitch-inner"></span>
-                                                <span class="onoffswitch-switch"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
-                                    <h3 class="product-cart-dn"></h3>
-                                    <div class="payment-details">
-                                        <h4>TEZGAH 11</h4>
-                                        <div class="onoffswitch">
-                                            <input type="checkbox" name="collapsemenu" checked="" class="onoffswitch-checkbox" id="example11">
-                                            <label class="onoffswitch-label" for="example11">
-                                                <span class="onoffswitch-inner"></span>
-                                                <span class="onoffswitch-switch"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
-                                    <h3 class="product-cart-dn"></h3>
-                                    <div class="payment-details">
-                                        <h4>TEZGAH 12</h4>
-                                        <div class="onoffswitch">
-                                            <input type="checkbox" name="collapsemenu" checked="" class="onoffswitch-checkbox" id="example12">
-                                            <label class="onoffswitch-label" for="example12">
-                                                <span class="onoffswitch-inner"></span>
-                                                <span class="onoffswitch-switch"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p> &nbsp</p>
+                                @endforeach
 
 
+
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <p> &nbsp;</p>
                                 <h1> Tezgahların Akış Rotasını Belirleyin </h1>
                                 <div class="sparkline10-graph">
                                     <div class="input-knob-dial-wrap">
                                         <div class="row">
+
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <div class="chosen-select-single">
                                                     <label for="card-number" class="form-label"></label>
-                                                    <select data-placeholder="Sırayla seçiniz..." class="chosen-select" multiple="" tabindex="-1">
-                                                        <option value="United States">Tezgah 1</option>
-                                                        <option value="United States">Tezgah 2</option>
-                                                        <option value="United States">Tezgah 3</option>
-                                                        <option value="United States">Tezgah 4</option>
-                                                        <option value="United States">Tezgah 5</option>
-                                                        <option value="United States">Tezgah 6</option>
-                                                        <option value="United States">Tezgah 7</option>
-                                                        <option value="United States">Tezgah 8</option>
+                                                    <select name="tezgah_id[]" data-placeholder="Sırayla seçiniz..." class="chosen-select" multiple="" tabindex="-1">
+                                                        @foreach($tezgahlar as $tezgah)
+                                                        <option value="{{$tezgah -> id}}">{{$tezgah -> ad}}</option>
+                                                        @endforeach
                                                     </select>
                                                 </div>
                                             </div>
+
                                         </div>
                                     </div>
                                     <p> &nbsp</p>
@@ -228,12 +100,13 @@
                                 </div>
                             </section>
                                 <div class="product-confarmation">
-                                    <button type="submit" class="btn btn-primary btn-block">İşi Başlat</button>
+                                    <button type="submit" class="btn btn-primary btn-block">Akış Yarat</button>
                                 </div>
                             </section>
                         </div>
                     </div>
                 </div>
+                </form>
             </div>
         </div>
     </div>

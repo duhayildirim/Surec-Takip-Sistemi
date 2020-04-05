@@ -17,5 +17,9 @@ class DatabaseSeeder extends Seeder
          $this->call('toplantilar_calisanlar_seeder');
          $this->call('tezgahlar_seeder');
          $this->call('tezgahlar_calisanlar_seeder');
+         $this->call('akislar_seeder');
+         $this->call('akislar_tezgahlar_seeder');
+         $this->call('surecler_seeder');
+         $this->call('surecler_akislar_seeder');
     }
 }

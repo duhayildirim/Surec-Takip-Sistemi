@@ -18,28 +18,37 @@
             </li>
         </ul>
     </div>
+    @foreach($surecler as $surec)
     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
         <div class="hpanel responsive-mg-b-30">
             <div class="panel-body">
                 <div class="stats-title pull-left">
-                    <h4>Surec Adi</h4>
+                    <h4>{{$surec -> ad}}</h4>
                 </div>
                 <div class="stats-icon pull-right">
                     <i class="fa fa-street-view" aria-hidden="true"></i>
                 </div>
+
                 <div class="m-t-xl">
-                    <h1 class="text-info">akış adi</h1>
-                    <small>
-                        Oluşturulma Tarihi:<strong>14/14/1204</strong>
-                    </small>
-                    <small>
-                        Son Teslim Tarihi:<strong>14/14/2204</strong>
-                    </small>
+                    <h1 class="text-info">{{$surec -> akis -> akis -> ad }}</h1>
 
+                    <small>
+                        Oluşturulma Tarihi:&nbsp;
+                    </small>
+                    <strong>{{$surec -> olusturulma_tarihi}}</strong>
+                    <p> &nbsp;</p>
+                    <small>
+                        Son Teslim Tarihi:&nbsp;
+                    </small>
+                    <strong>{{$surec-> teslim_tarihi}}</strong>
 
-                    <a href="{{route('surec_detay')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Detaylar/Düzenle</a>
+                    <a href="{{route('surec_detay', $surec -> id)}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Detaylar/Düzenle</a>
                 </div>
             </div>
         </div>
     </div>
+
+    @endforeach
+    <p> &nbsp;</p>
+    <p> &nbsp;</p>
 @endsection

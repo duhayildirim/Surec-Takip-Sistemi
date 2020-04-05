@@ -21,12 +21,12 @@ class surecler extends Model
 
     public function akis()
     {
-        return $this -> belongsTo(surecler_akislar::class , 'surecler_id');
+        return $this -> belongsTo(surecler_akislar::class , 'id');
     }
 
     public function tezgahlar()
     {
-        return $this -> hasMany(surecler_tezgahlar::class , 'surecler_id');
+        return $this -> hasMany(surecler_tezgahlar::class , 'surec_id');
     }
 }
 

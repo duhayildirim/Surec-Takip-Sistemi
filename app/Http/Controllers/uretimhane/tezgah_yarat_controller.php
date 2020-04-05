@@ -21,6 +21,13 @@ class tezgah_yarat_controller extends Controller
 
     public function tezgah_kaydet(Request $request)
     {
+        $request -> validate([
+            "ad" => 'required',
+            "aciklama" => 'required',
+            "calisan_id" => 'required|array',
+            "calisan_id.*" => 'required|distinct'
+        ]);
+
         $kaydet = new tezgahlar();
         $kaydet -> fill($request->all());
 

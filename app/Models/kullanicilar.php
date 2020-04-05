@@ -43,3 +43,4 @@ class kullanicilar extends Authenticatable
         return $this -> hasMany(toplantilar_calisanlar::class,'kullanicilar_id');
     }
 }
+

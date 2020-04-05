@@ -2,25 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc759033-75b1-45cc-821b-30afef5422c4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/surec_takip.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/surec_takip.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/toplantilar/gelecek_toplantilar_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/toplantilar/gelecek_toplantilar_controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/toplantilar/toplanti_olustur_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/toplantilar/toplanti_olustur_controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/akislar_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/akislar_controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/surec_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/surec_controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/sureci_baslat_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/sureci_baslat_controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/tezgah_yarat_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/tezgah_yarat_controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/tezgahina_git/tezgahina_git_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/tezgahina_git/tezgahina_git_controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/gelecek_toplantilar.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/gelecek_toplantilar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/akislar.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/akislar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/kullanicilar.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/kullanicilar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/surecler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/surecler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/tezgahlar.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/tezgahlar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_03_073117_create_gelecek_toplatilar_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_03_073939_create_surecler_akislar_table.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/toplantilar/gelecek_toplantilar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/toplantilar/gelecek_toplantilar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/toplantilar/toplanti_olustur.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/toplantilar/toplanti_olustur.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/uretimhane/akis_listesi.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/uretimhane/akis_listesi.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/uretimhane/akislar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/uretimhane/akislar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/uretimhane/surec.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/uretimhane/surec.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/uretimhane/surec_detay.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/uretimhane/surec_detay.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/uretimhane/sureci_baslat.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/uretimhane/sureci_baslat.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/uretimhane/tezgah_yarat.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/uretimhane/tezgah_yarat.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/uretimhane/tezgahina_git/tezgahina_git.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/uretimhane/tezgahina_git/tezgahina_git.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -216,6 +213,7 @@
       <workItem from="1585808645622" duration="19591000" />
       <workItem from="1585898523347" duration="17108000" />
       <workItem from="1585992740303" duration="20809000" />
+      <workItem from="1586073361983" duration="26060000" />
     </task>
     <servers />
   </component>
@@ -231,10 +229,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="720" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1585276674300" />
-    <state x="669" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585809339423">
+    <state x="669" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586102902550">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="669" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1585809339423" />
+    <state x="669" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1586102902550" />
     <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1585927952532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -263,33 +261,33 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="716" y="364" key="SymfonyComponentCompositeDataDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1585090660118" />
-    <state x="656" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1585898523052">
+    <state x="656" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1586073362208">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1585898523052" />
-    <state x="1920" y="0" width="1296" height="846" maximized="true" key="dock-window-1" timestamp="1586013741486">
+    <state x="656" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1586073362208" />
+    <state x="1920" y="0" width="1296" height="846" maximized="true" key="dock-window-1" timestamp="1586113330652">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state x="1920" y="0" width="1296" height="846" maximized="true" key="dock-window-1/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1586013741486" />
-    <state x="1920" y="0" width="1296" height="846" maximized="true" key="dock-window-2" timestamp="1586023759759">
+    <state x="1920" y="0" width="1296" height="846" maximized="true" key="dock-window-1/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1586113330652" />
+    <state x="1920" y="0" width="1296" height="846" maximized="true" key="dock-window-2" timestamp="1586082532193">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state x="1920" y="0" width="1296" height="846" maximized="true" key="dock-window-2/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1586023759759" />
-    <state x="1920" y="55" width="1296" height="846" maximized="true" key="dock-window-3" timestamp="1585845198449">
+    <state x="1920" y="0" width="1296" height="846" maximized="true" key="dock-window-2/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1586082532193" />
+    <state x="1920" y="4" width="1296" height="846" maximized="true" key="dock-window-3" timestamp="1586113309121">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state x="1920" y="55" width="1296" height="846" maximized="true" key="dock-window-3/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1585845198449" />
-    <state x="1920" y="0" width="1296" height="1029" key="dock-window-4" timestamp="1585666760230">
+    <state x="1920" y="4" width="1296" height="846" maximized="true" key="dock-window-3/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1586113309121" />
+    <state x="1920" y="200" width="1296" height="846" maximized="true" key="dock-window-4" timestamp="1586115141420">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state x="1920" y="0" width="1296" height="1029" key="dock-window-4/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1585666760230" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1585722371369">
+    <state x="1920" y="200" width="1296" height="846" maximized="true" key="dock-window-4/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1586115141420" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1586075361313">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1585722371369" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586015100851">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1586075361313" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586105930828">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1586015100851" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1586105930828" />
   </component>
 </project>

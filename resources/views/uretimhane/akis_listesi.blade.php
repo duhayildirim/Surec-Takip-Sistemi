@@ -35,14 +35,22 @@
 
                             </tr>
                             </thead>
+                            @foreach($akislar as $akis)
                             <tbody>
                             <tr>
-                                <td>Zımparalama</td>
-                                <td>Tezgah 1 -> Tezgah 2 -> Tezgah 3 -> Tezgah 4 -> Tezgah 5 -> Tezgah 6 -> Tezgah 7 </td>
-                                <td><a href="#" class="btn btn-info btn-xs">Akışı Sil</a></td>
+                                <td>{{$akis -> ad}}</td>
+                                <td>
+                                     @foreach($akis -> tezgahlar as $girdi => $akis_tezgah)
+                                         {{$akis_tezgah -> tezgah -> ad . ($akis_tezgah -> tezgah -> ad !== end($akis_tezgah -> tezgah) ? '->' : '' )}}
+                                     @endforeach
+                                </td>
+                                <form action="{{route('akis_sil' , $akis -> id)}}" method="post">
+                                    {{csrf_field()}}
+                                <td><button type="submit" class="btn btn-primary btn-sm">Akışı Sil</button></td>
+                                </form>
                             </tr>
                             </tbody>
-
+                            @endforeach
                         </table>
                     </div>
                 </div>

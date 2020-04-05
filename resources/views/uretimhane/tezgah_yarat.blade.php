@@ -18,6 +18,15 @@
             </li>
         </ul>
     </div>
+    @if($errors->any())
+        <div class="alert alert-error">
+            <ul>
+                @foreach($errors->all() as $error)
+                    <li>{{$error}}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
     <form action="{{route('tezgah_kaydet')}}" method="post">
         {{csrf_field()}}
         <h3 class="product-cart-dn"></h3>

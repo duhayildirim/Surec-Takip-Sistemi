@@ -27,4 +27,8 @@ class tezgahlar extends Model
     {
         return $this -> hasMany(tezgahlar_calisanlar::class,'tezgah_id');
     }
+    public function akislar()
+    {
+        return $this -> hasMany(akislar_tezgahlar::class,'tezgah_id');
+    }
 }

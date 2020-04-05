@@ -24,52 +24,31 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="x-editable-list">
                         <div class="alert-title">
-                            <h2>Proje Adı</h2>
+                            <h2>{{$surec_detay -> ad}}</h2>
 
                         </div>
                         <table id="user" class="table table-bordered table-striped x-editor-custom">
                             <tbody>
                             <tr>
-                                <td style="width=35%">Simple text field</td>
-                                <td style="width=65%"><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter username">superuser</a>
+                                <td style="width=35%">Süreç Adı</td>
+                                <td style="width=65%"><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter username">{{$surec_detay -> ad}}</a>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Empty text field, required</td>
+                                <td>Ürün Adeti</td>
                                 <td>
-                                    <a href="#" id="firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>
+                                    <a href="#" id="adet" data-type="text" data-pk="1" data-title="Enter username">{{$surec_detay -> adet}}</a>
                                 </td>
                             </tr>
+
                             <tr>
-                                <td>Select, local array, custom display</td>
+                                <td>Teslim Tarihi</td>
                                 <td>
-                                    <a href="#" id="sex" data-type="select" data-pk="1" data-value="" data-title="Select sex"></a>
+                                    <a href="#" id="dob" data-type="combodate" data-value="{{$surec_detay -> teslim_tarihi}}" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth"></a>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Select, remote array, no buttons</td>
-                                <td><a href="#" id="group" data-type="select" data-pk="1" data-value="5" data-source="/groups" data-title="Select group">Admin</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Select, error while loading</td>
-                                <td><a href="#" id="status" data-type="select" data-pk="1" data-value="0" data-source="/status" data-title="Select status">Active</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Datepicker</td>
-                                <td>
-                                    <a href="#" id="vacation" data-type="date" data-viewformat="dd.mm.yyyy" data-pk="1" data-placement="right" data-title="When you want vacation to start?">25.02.2013</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Combodate (date)</td>
-                                <td>
-                                    <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth"></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Combodate (datetime)</td>
+                                <td>En</td>
                                 <td>
                                     <a href="#" id="event" data-type="combodate" data-template="D MMM YYYY  HH:mm" data-format="YYYY-MM-DD HH:mm" data-viewformat="MMM D, YYYY, HH:mm" data-pk="1" data-title="Setup event date and time"></a>
                                 </td>
