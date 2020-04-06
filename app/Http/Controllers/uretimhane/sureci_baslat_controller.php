@@ -42,6 +42,8 @@ class sureci_baslat_controller extends Controller
         $surecler_akislar_kaydet -> surec_id = $kaydet -> id;
         $surecler_akislar_kaydet -> save();
 
+
+
         return redirect()->route('surec');
     }
 

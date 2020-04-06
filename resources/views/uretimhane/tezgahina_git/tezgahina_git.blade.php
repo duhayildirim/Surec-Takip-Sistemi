@@ -39,7 +39,7 @@
                                 <p class="small mg-t-box">
                                    {{$tezgah -> aciklama}}
                                 </p>
-                                <a class="btn btn-warning" href="{{route('tezgah_detay')}}" role="button">Tezgaha Giriş Yap</a>
+                                <a class="btn btn-warning" href="{{route('tezgah_detay' , $tezgah -> id)}}" role="button">Tezgaha Giriş Yap</a>
                             </div>
                         </div>
                     </div>

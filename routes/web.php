@@ -58,7 +58,7 @@ Route::group(['middleware' => 'auth'] ,function () {
         Route::post('/akis_sil/{id}','uretimhane\akislar_controller@akis_sil')->name('akis_sil');
         Route::get('/tezgahlari_gor','uretimhane\tezgahlari_gor_controller@icerik')->name('tezgahlari_gor');
         Route::get('/tezgahina_git','uretimhane\tezgahina_git\tezgahina_git_controller@icerik')->name('tezgahina_git');
-        Route::get('/tezgah_detay','uretimhane\tezgahina_git\tezgah_detay_controller@icerik')->name('tezgah_detay');
+        Route::get('/tezgah_detay/{id}','uretimhane\tezgahina_git\tezgah_detay_controller@icerik')->name('tezgah_detay');
         Route::get('/biten_urunler','uretimhane\biten_urunler_controller@icerik')->name('biten_urunler');
     });
 });

@@ -19,14 +19,19 @@
         </ul>
     </div>
     <p> <h3> &nbsp; İşlerine kaldığın yerden devam et</h3> </p>
+    @foreach($surecler as $surec)
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="sparkline11-list responsive-mg-b-30">
             <div class="sparkline11-hd">
                 <div class="main-sparkline11-hd">
-                    <h1>İşin <span class="basic-ds-n">Adı</span></h1>
+                    <h1><span class="basic-ds-n">{{$surec->ad}} </span>
+
+                    </h1>
                 </div>
+                <small>Son Teslim Tarihi</small><strong> {{$surec -> teslim_tarihi}} </strong>
+               
             </div>
-            <p>açıklaması </p>
+            <p>{{$surec -> detay}} </p>
             <div class="sparkline11-graph">
                 <div class="basic-login-form-ad">
                     <div class="row">
@@ -82,6 +87,7 @@
             </div>
         </div>
     </div>
+    @endforeach
     <p> &nbsp; </p>
     <p> &nbsp; </p>
     <p> &nbsp; </p>

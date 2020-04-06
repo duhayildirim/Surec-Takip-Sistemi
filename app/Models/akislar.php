@@ -27,4 +27,8 @@ class akislar extends Model
     {
         return $this -> hasMany(akislar_tezgahlar::class , 'akis_id');
     }
+
+    public function surecVerileri(){
+        return $this -> belongsToMany(surecler::class,surecler_akislar::class,'akis_id','surec_id');
+    }
 }
