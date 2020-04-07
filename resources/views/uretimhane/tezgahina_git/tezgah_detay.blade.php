@@ -29,7 +29,7 @@
                     </h1>
                 </div>
                 <small>Son Teslim Tarihi</small><strong> {{$surec -> teslim_tarihi}} </strong>
-               
+
             </div>
             <p>{{$surec -> detay}} </p>
             <div class="sparkline11-graph">

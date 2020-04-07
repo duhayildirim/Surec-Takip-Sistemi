@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cc759033-75b1-45cc-821b-30afef5422c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/sureci_baslat_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/sureci_baslat_controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/tezgahina_git/tezgah_detay_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/tezgahina_git/tezgah_detay_controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/akislar.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/akislar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/tezgahlar.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/tezgahlar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/uretimhane/tezgahina_git/tezgah_detay.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/uretimhane/tezgahina_git/tezgah_detay.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/uretimhane/tezgahina_git/tezgahina_git.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/uretimhane/tezgahina_git/tezgahina_git.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -204,7 +200,7 @@
       <workItem from="1585898523347" duration="17108000" />
       <workItem from="1585992740303" duration="20809000" />
       <workItem from="1586073361983" duration="26060000" />
-      <workItem from="1586165984170" duration="17559000" />
+      <workItem from="1586165984170" duration="22776000" />
     </task>
     <servers />
   </component>

@@ -15,7 +15,7 @@ Route::group(['middleware' => 'auth'] ,function () {
 
     Route::get('/yardim','yardim_controller@icerik')->name('yardim');
 
-    Route::group(['prefix' => 'calisanlar'], function () {
+    Route::group(['prefix' => 'calisanlar',"middleware"=>"role:admin"], function () {
         Route::get('/ekip_listesi','calisanlar\ekip_listesi_controller@icerik')->name('ekip_listesi');
         Route::get('/duzenle/{id}','calisanlar\duzenle_controller@icerik')->name('duzenle');
         Route::post('/calisan_guncelle/{id}','calisanlar\duzenle_controller@calisan_guncelle')->name('calisan_guncelle');
