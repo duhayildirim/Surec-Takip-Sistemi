@@ -30,59 +30,29 @@
                         <table>
                             <tr>
                                 <th>Tezgah Adı</th>
-                                <th>Aktif</th>
-                                <th>Mesai Başlangıcı</th>
-                                <th>Çalışma Süresi</th>
-                                <th>İş Tanımı</th>
-                                <th>Price</th>
-                                <th>İstatistik</th>
+                                <th>Durumu</th>
+                                <th>Tezgah Görevlileri</th>
+                                <th>Tezgah Sil</th>
                             </tr>
+                            @foreach($tezgahlar as $tezgah)
                             <tr>
-                                <td>Jewelery Title 1</td>
+                                <td>{{$tezgah -> ad}}</td>
                                 <td>
                                     <button class="pd-setting">Active</button>
                                 </td>
-                                <td>50</td>
-                                <td>$750</td>
-                                <td>Out Of Stock</td>
-                                <td>$15</td>
                                 <td>
-                                    <button data-toggle="tooltip" title="Tezgahın Performansını Gör" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-
+                                @foreach($tezgah -> kullanicilar as $girdi => $calisan)
+                                {{$calisan -> kullanici -> ad}}<small>{{$calisan -> kullanici -> soyad}}</small>
+                                @endforeach
                                 </td>
+                                <form action="{{route('tezgah_sil' , $tezgah -> id)}}" method="post">
+                                    {{csrf_field()}}
+                                <td><button type="submit" class="btn btn-primary btn-sm">SİL</button></td>
+                                </form>
                             </tr>
-                            <tr>
-
-                                <td>Jewelery Title 2</td>
-                                <td>
-                                    <button class="ps-setting">Paused</button>
-                                </td>
-                                <td>60</td>
-                                <td>$1020</td>
-                                <td>In Stock</td>
-                                <td>$17</td>
-                                <td>
-                                    <button data-toggle="tooltip" title="Tezgahın Performansını Gör" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-
-                                </td>
-                            </tr>
-                            <tr>
-
-                                <td>Jewelery Title 3</td>
-                                <td>
-                                    <button class="ds-setting">Disabled</button>
-                                </td>
-                                <td>70</td>
-                                <td>$1050</td>
-                                <td>Low Stock</td>
-                                <td>$15</td>
-                                <td>
-                                    <button data-toggle="tooltip" title="Tezgahın Performansını Gör" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-
-                                </td>
-                            </tr>
-
+                            @endforeach
                         </table>
+
                     </div>
                 </div>
             </div>

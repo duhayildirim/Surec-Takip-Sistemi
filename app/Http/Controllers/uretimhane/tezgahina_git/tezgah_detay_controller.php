@@ -18,17 +18,22 @@ class tezgah_detay_controller extends Controller
     {
         $tezgah = tezgahlar::where('id',$id)->first();
         $surecler = [];
-        if (isset($tezgah)){
-            $akisVerileri = $tezgah->akisVerileri;
-            foreach ($akisVerileri as $akis){
-                $surecVerileri = $akis->surecVerileri;
-                foreach ($surecVerileri as $surec){
+        if (isset($tezgah))
+        {
+            $akis_verileri = $tezgah->akis_verileri;
+            foreach ($akis_verileri as $akis)
+            {
+                $surec_verileri = $akis->surec_verileri;
+                foreach ($surec_verileri as $surec)
+                {
                     $surecler[]=$surec;
                 }
             }
         }
 //        dd($surecler);
 
+        $tezgahlar = tezgahlar::all();
+        View::share('tezgahlar' , $tezgahlar);
 
         return view('uretimhane.tezgahina_git.tezgah_detay')->with(['surecler' => $surecler]);
     }

@@ -9,6 +9,8 @@ class uretim_controller extends Controller
 {
     public function icerik()
     {
+
+
         return view('performans.uretim');
     }
 }

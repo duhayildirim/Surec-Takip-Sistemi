@@ -36,3 +36,4 @@ class toplantilar_calisanlar_seeder extends Seeder
 
     }
 }
+

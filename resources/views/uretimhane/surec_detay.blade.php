@@ -50,41 +50,37 @@
                             <tr>
                                 <td>En</td>
                                 <td>
-                                    <a href="#" id="event" data-type="combodate" data-template="D MMM YYYY  HH:mm" data-format="YYYY-MM-DD HH:mm" data-viewformat="MMM D, YYYY, HH:mm" data-pk="1" data-title="Setup event date and time"></a>
+                                    <a href="#" data-title="Setup event date and time"></a>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Bootstrap Datetimepicker</td>
-                                <td><a href="#" id="meeting_start" data-type="datetime" data-pk="1" data-url="/post" data-placement="right" title="Set date & time">15/03/2013 12:45</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Textarea, buttons below. Submit by <i>ctrl+enter</i>
-                                </td>
-                                <td><a href="#" id="comments" data-type="textarea" data-pk="1" data-placeholder="Your comments here..." data-title="Enter comments">awesome user!</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Checklist</td>
+                                <td>Boy</td>
                                 <td>
-                                    <a href="#" id="fruits" data-type="checklist" data-value="2,3" data-title="Select fruits"></a>
+                                    <a href="#" data-title="Setup event date and time"></a>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Select2 (tags mode)</td>
-                                <td><a href="#" id="tags" data-type="select2" data-pk="1" data-title="Enter tags">html, javascript</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Select2 (dropdown mode)</td>
+                                <td>Yükseklik</td>
                                 <td>
-                                    <a href="#" id="country" data-type="select2" data-pk="1" data-value="BS" data-title="Select country"></a>
+                                    <a href="#" data-title="Setup event date and time"></a>
                                 </td>
                             </tr>
-                            </tbody>
+                            <tr>
+                                <td>Detay</td>
+                                <td>
+                                    <a href="#" id="event" data-type="combodate" data-template="D MMM YYYY  HH:mm" data-format="YYYY-MM-DD HH:mm" data-viewformat="MMM D, YYYY, HH:mm" data-pk="1" data-title="Setup event date and time">{{$surec_detay -> detay}}</a>
+                                </td>
+                            </tr>
+
                         </table>
                     </div>
+                    <p> &nbsp;</p>
                     <a href="{{route('surec')}}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Geri Dön</a>
+                    <form action="{{route('surec_sil' , $surec_detay -> id )}}" method="post">
+                        {{csrf_field()}}
+                    <button  class="btn btn-secondary btn-lg active" type="submit" aria-pressed="true">Süreci Sil</button>
+                    </form>
+                    <p> &nbsp;</p>
                 </div>
             </div>
         </div>

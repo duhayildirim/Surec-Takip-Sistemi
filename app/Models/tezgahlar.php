@@ -31,7 +31,7 @@ class tezgahlar extends Model
     {
         return $this -> hasMany(akislar_tezgahlar::class,'tezgah_id');
     }
-    public function akisVerileri(){
+    public function akis_verileri(){
         return $this->belongsToMany(akislar::class,akislar_tezgahlar::class,'tezgah_id','akis_id');
     }
 }

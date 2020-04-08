@@ -16,7 +16,7 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                 <ul class="breadcome-menu">
-                                    <li>28/03/2020</li>
+                                    <li></li>
                                 </ul>
                             </div>
                         </div>
@@ -32,33 +32,35 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                         <div class="admin-content analysis-progrebar-ctn">
-                            <h4 class="text-left text-uppercase"><b>TEZGAHLAR</b></h4>
+                            <h4 class="text-left text-uppercase"><b>TEZGAHLARINIZ</b></h4>
                             <div class="row vertical-center-box vertical-center-box-tablet">
                                 <div class="text-left col-xs-3 mar-bot-15">
-                                    <label class="label bg-green">8 ADET <i class="fa fa-level-up" aria-hidden="true"></i></label>
+                                    <label class="label bg-green">{{$istatistikler['tezgahlar']}} ADET <i class="fa fa-level-up" aria-hidden="true"></i></label>
                                 </div>
                                 <div class="col-xs-9 cus-gh-hd-pro">
-                                    <h2 class="text-right no-margin">5'i Çalışır Halde  </h2>
+                                    <p> &nbsp; </p>
+                                    <h2 class="text-right no-margin">Hepsi Aktif Halde  </h2>
                                 </div>
                             </div>
                             <div class="progress progress-mini">
-                                <div style="width: 60%;" class="progress-bar bg-green"></div>
+                                <div style="width: 98%;" class="progress-bar bg-green"></div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="margin-bottom:1px;">
                         <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                            <h4 class="text-left text-uppercase"><b>SİPARİŞLER</b></h4>
+                            <h4 class="text-left text-uppercase"><b>MESAİ</b></h4>
                             <div class="row vertical-center-box vertical-center-box-tablet">
                                 <div class="text-left col-xs-3 mar-bot-15">
-                                    <label class="label bg-red">65 ADET <i class="fa fa-level-up" aria-hidden="true"></i></label>
+                                    <label class="label bg-red">{{$istatistikler['calisanlar']}} ÇALIŞAN<i class="fa fa-level-up" aria-hidden="true"></i></label>
                                 </div>
                                 <div class="col-xs-9 cus-gh-hd-pro">
-                                    <h2 class="text-right no-margin">64 Adeti Onaylandı</h2>
+                                    <p> &nbsp; </p>
+                                    <h2 class="text-right no-margin"> 1 KİŞİ AKTİF</h2>
                                 </div>
                             </div>
                             <div class="progress progress-mini">
-                                <div style="width: 95%;" class="progress-bar progress-bar-danger bg-red"></div>
+                                <div style="width: 10%;" class="progress-bar progress-bar-danger bg-red"></div>
                             </div>
                         </div>
                     </div>
@@ -67,10 +69,11 @@
                             <h4 class="text-left text-uppercase"><b>ÜRETİMDEKİLER</b></h4>
                             <div class="row vertical-center-box vertical-center-box-tablet">
                                 <div class="text-left col-xs-3 mar-bot-15">
-                                    <label class="label bg-blue">64 ADET <i class="fa fa-level-up" aria-hidden="true"></i></label>
+                                    <label class="label bg-blue">{{$istatistikler['surecler']}} İŞ TANIMI <i class="fa fa-level-up" aria-hidden="true"></i></label>
                                 </div>
                                 <div class="col-xs-9 cus-gh-hd-pro">
-                                    <h2 class="text-right no-margin"> 1 tane daha üretilmeli</h2>
+                                    <p> &nbsp; </p>
+                                    <h2 class="text-right no-margin"> HEPSİ ONAYLANDI</h2>
                                 </div>
                             </div>
                             <div class="progress progress-mini">
@@ -83,10 +86,11 @@
                             <h4 class="text-left text-uppercase"><b>BİTENLER</b></h4>
                             <div class="row vertical-center-box vertical-center-box-tablet">
                                 <div class="text-left col-xs-3 mar-bot-15">
-                                    <label class="label bg-purple">35 ADET <i class="fa fa-level-up" aria-hidden="true"></i></label>
+                                    <label class="label bg-purple">{{$istatistikler['biten_urunler']}} ÜRÜN <i class="fa fa-level-up" aria-hidden="true"></i></label>
                                 </div>
                                 <div class="col-xs-9 cus-gh-hd-pro">
-                                    <h2 class="text-right no-margin">29 tane daha bitmeli</h2>
+                                    <p> &nbsp; </p>
+                                    <h2 class="text-right no-margin"> TAMAMLANDI </h2>
                                 </div>
                             </div>
                             <div class="progress progress-mini">

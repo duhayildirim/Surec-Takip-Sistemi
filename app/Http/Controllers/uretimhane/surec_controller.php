@@ -25,4 +25,13 @@ class surec_controller extends Controller
 
         return view('uretimhane.surec_detay');
     }
+
+    public function surec_sil($id)
+    {
+        $sil = surecler::find($id);
+        surecler_akislar::where('surec_id' , $sil -> id)->delete();
+        $sil -> delete();
+
+        return redirect()->route('surec');
+    }
 }

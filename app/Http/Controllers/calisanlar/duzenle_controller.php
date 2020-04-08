@@ -4,6 +4,8 @@ namespace App\Http\Controllers\calisanlar;
 
 use App\Http\Controllers\Controller;
 use App\kullanicilar;
+use App\Models\tezgahlar_calisanlar;
+use App\Models\toplantilar_calisanlar;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 
@@ -35,7 +37,10 @@ class duzenle_controller extends Controller
     {
 
         $sil = kullanicilar::find($id);
+        toplantilar_calisanlar::where('calisan_id' , $sil -> id)->delete();
+        tezgahlar_calisanlar::where('calisan_id' , $sil -> id)->delete();
         $sil -> delete();
+
 
         return redirect()->route('ekip_listesi');
     }

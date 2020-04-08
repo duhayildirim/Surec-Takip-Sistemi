@@ -23,4 +23,8 @@ class urunler extends Model
     {
         return $this -> belongsTo(surecler_akislar_urunler::class,'urunler_id');
     }
+    public function tezgah()
+    {
+        return $this -> belongsTo(tezgahlar::class,'tezgah_id');
+    }
 }

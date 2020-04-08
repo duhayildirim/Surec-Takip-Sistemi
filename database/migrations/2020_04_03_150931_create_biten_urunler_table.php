@@ -15,10 +15,11 @@ class CreateBitenUrunlerTable extends Migration
     {
         Schema::create('biten_urunler', function (Blueprint $table) {
             $table->id();
-            $table->integer('urunler_id');
+            $table->integer('surec_id');
             $table->integer('urun_no');
+            $table->integer('tezgah_id');
             $table->timestamp('olusturulma_tarihi')->default(DB::raw('CURRENT_TIMESTAMP'));
-            $table->timestamp('guncellenme_tarihi')->default(DB::raw('CURRENT_TIMESTAMP on UPDATE CURRENT_TIMESTAMP'));
+            $table->timestamp('guncelleme_tarihi')->default(DB::raw('CURRENT_TIMESTAMP on UPDATE CURRENT_TIMESTAMP'));
             $table->timestamp('silinme_tarihi')->nullable();
         });
     }

@@ -7,6 +7,7 @@
     <title>Süreç Takip</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- favicon
 		============================================ -->
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('surec_takip/img/logo/duha_logo.png')}}">
@@ -99,6 +100,9 @@
     <!-- dropzone CSS
       ============================================ -->
     <link rel="stylesheet" href="{{asset('surec_takip/css/dropzone/dropzone.css')}}">
+    <!-- Preloader CSS
+       ============================================ -->
+    <link rel="stylesheet" href="{{asset('surec_takip/css/preloader/preloader-style.css')}}">
 </head>
 
 <body>
@@ -127,13 +131,6 @@
                             <li><a title="Notifications" href="{{route('toplanti_olustur')}}"><i class="fa fa-external-link-square sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Toplantı Oluştur</span></a></li>
                             <li><a title="Alerts" href="{{route('gelecek_toplantilar')}}"><i class="fa fa-crop sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Gelecek Toplantılar</span></a></li>
                            </ul>
-                    </li>
-                    <li>
-                        <a class="has-arrow" href="#" aria-expanded="false"><i class="fa big-icon fa-envelope sub-icon-mg"></i> <span class="mini-click-non">&nbsp;Mesajlar</span></a>
-                        <ul class="submenu-angle" aria-expanded="false">
-                            <li><a title="View Mail" href="{{route('gelen_kutusu')}}"><i class="fa fa-television sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Gelen Kutusu</span></a></li>
-                            <li><a title="Compose Mail" href="{{route('mesaj_olustur')}}"><i class="fa fa-paper-plane sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Mesaj Oluştur</span></a></li>
-                        </ul>
                     </li>
                     <li>
                         <a class="has-arrow" href="#" aria-expanded="false"><i class="fa big-icon fa-bar-chart-o icon-wrap"></i> <span class="mini-click-non">&nbsp;&nbsp;Performans</span></a>
@@ -206,7 +203,7 @@
                                             <li class="nav-item">
                                                 <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
                                                     <i class="fa fa-user adminpro-user-rounded header-riht-inf" aria-hidden="true"></i>
-                                                    <span class="admin-name">SüperAdmin</span>
+                                                    <span class="admin-name">Hesap</span>
                                                     <i class="fa fa-angle-down adminpro-icon adminpro-down-arrow"></i>
                                                 </a>
                                                 <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
@@ -247,13 +244,6 @@
                                         <ul class="submenu-angle" aria-expanded="false">
                                             <li><a title="Notifications" href="{{route('toplanti_olustur')}}"><i class="fa fa-external-link-square sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Toplantı Oluştur</span></a></li>
                                             <li><a title="Alerts" href="{{route('gelecek_toplantilar')}}"><i class="fa fa-crop sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Gelecek Toplantılar</span></a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a class="has-arrow" href="#" aria-expanded="false"><i class="fa big-icon fa-envelope sub-icon-mg"></i> <span class="mini-click-non">&nbsp;Mesajlar</span></a>
-                                        <ul class="submenu-angle" aria-expanded="false">
-                                            <li><a title="View Mail" href="{{route('gelen_kutusu')}}"><i class="fa fa-television sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Gelen Kutusu</span></a></li>
-                                            <li><a title="Compose Mail" href="{{route('mesaj_olustur')}}"><i class="fa fa-paper-plane sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Mesaj Oluştur</span></a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -451,7 +441,7 @@
     <!-- dropzone JS
 		============================================ -->
     <script src="{{asset('surec_takip/js/dropzone/dropzone.js')}}"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"> </script>
 </body>
 
 </html>

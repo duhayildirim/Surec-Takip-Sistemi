@@ -18,7 +18,7 @@ class CreateUrunlerTable extends Migration
             $table->integer('tezgah_id');
             $table->integer('urun_no');
             $table->timestamp('olusturulma_tarihi')->default(DB::raw('CURRENT_TIMESTAMP'));
-            $table->timestamp('guncellenme_tarihi')->default(DB::raw('CURRENT_TIMESTAMP on UPDATE CURRENT_TIMESTAMP'));
+            $table->timestamp('guncelleme_tarihi')->default(DB::raw('CURRENT_TIMESTAMP on UPDATE CURRENT_TIMESTAMP'));
             $table->timestamp('silinme_tarihi')->nullable();
         });
     }
