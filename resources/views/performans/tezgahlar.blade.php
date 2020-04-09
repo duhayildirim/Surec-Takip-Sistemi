@@ -18,96 +18,106 @@
             </li>
         </ul>
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <div class="sparkline11-list mt-b-30">
-            <div class="sparkline11-hd">
-                <div class="main-sparkline11-hd">
-                    <h1>Peity Table</h1>
+    <div class="data-table-area mg-tb-15">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="sparkline13-list">
+                        <div>
+                            <canvas id="myChart" width="10%"></canvas>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="sparkline11-graph">
-                <div class="static-table-list">
-                    <table class="table sparkle-table">
-                        <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Data</th>
-                            <th>User</th>
-                            <th>Value</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td><span class="pie">1/6</span>
-                            </td>
-                            <td>Roshid</td>
-                            <td><i class="fa fa-level-up"></i> 55%</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td><span class="pie">230/360</span>
-                            </td>
-                            <td>Khan</td>
-                            <td><i class="fa fa-level-down"></i> 75%</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td><span class="pie">2,7</span>
-                            </td>
-                            <td>Shak</td>
-                            <td><i class="fa fa-level-up"></i> 95%</td>
-                        </tr>
-                        </tbody>
-                    </table>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="sparkline13-list">
+                        <div>
+                            <canvas id="chart.0" width="10%"></canvas>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <div class="sparkline13-list mg-b-15">
-            <div class="sparkline13-hd">
-                <div class="main-sparkline13-hd">
-                    <h1>Line Table</h1>
-                </div>
-            </div>
-            <div class="sparkline13-graph">
-                <div class="static-table-list">
-                    <table class="table sparkle-table">
-                        <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Data</th>
-                            <th>User</th>
-                            <th>Value</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td><span data-diameter="40" class="updating-chart">2,5,9,6,5,9,7,3,5,2,5,3,9,6,5,8,7,8,5,2</span>
-                            </td>
-                            <td>Roshid</td>
-                            <td><i class="fa fa-level-up"></i> 55%</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td><span class="line">8,5,2,-1,-3,-2,8,3,5,3</span>
-                            </td>
-                            <td>Khan</td>
-                            <td><i class="fa fa-level-down"></i> 75%</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td><span class="bar">5,3,9,6,5,9,7,3,5,2</span>
-                            </td>
-                            <td>Shak</td>
-                            <td><i class="fa fa-level-up"></i> 95%</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"> </script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+
+        var ctx = document.getElementById('chart.0').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+
 @endsection

@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
     <!-- favicon
 		============================================ -->
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('surec_takip/img/logo/duha_logo.png')}}">
@@ -103,6 +104,7 @@
     <!-- Preloader CSS
        ============================================ -->
     <link rel="stylesheet" href="{{asset('surec_takip/css/preloader/preloader-style.css')}}">
+
 </head>
 
 <body>
@@ -441,7 +443,8 @@
     <!-- dropzone JS
 		============================================ -->
     <script src="{{asset('surec_takip/js/dropzone/dropzone.js')}}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"> </script>
+
+
 </body>
 
 </html>

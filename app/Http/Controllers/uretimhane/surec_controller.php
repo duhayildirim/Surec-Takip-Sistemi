@@ -5,6 +5,7 @@ namespace App\Http\Controllers\uretimhane;
 use App\Http\Controllers\Controller;
 use App\Models\surecler;
 use App\Models\surecler_akislar;
+use App\Models\surecler_urunler;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 
@@ -30,6 +31,7 @@ class surec_controller extends Controller
     {
         $sil = surecler::find($id);
         surecler_akislar::where('surec_id' , $sil -> id)->delete();
+        surecler_urunler::where('surec_id' , $sil -> id)->delete();
         $sil -> delete();
 
         return redirect()->route('surec');

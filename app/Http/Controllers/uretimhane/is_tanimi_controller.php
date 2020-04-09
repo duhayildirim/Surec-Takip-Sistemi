@@ -11,6 +11,7 @@ class is_tanimi_controller extends Controller
 {
     public function icerik()
     {
+
         $isterler = is_emirleri::all();
         View::share('isterler' , $isterler);
 

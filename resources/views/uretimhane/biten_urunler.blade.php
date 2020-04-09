@@ -26,23 +26,32 @@
                         <table id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
                             <thead>
                             <tr>
-                                <th style="width: 15%">Akışın Adı
+                                <th style="width: 20%">İşin Adı
                                 </th>
-                                <th style="width: 85%">Akışın Rotası
+
+                                <th style="width: 22%">Biten Ürünlerin Numarası
                                 </th>
-                                <th class="th-sm">Sil
+                                <th style="width: 20%">Teslim Edilmesi Gereken Zaman
                                 </th>
+                                <th style="width: 20%">Tamamlanma Zamanı
+                                </th>
+                                <th style="width: 20%">Teslim Eden Tezgah
+                                </th>
+
 
                             </tr>
                             </thead>
-                            <tbody>
-                            <tr>
-                                <td>Zımparalama</td>
-                                <td>Tezgah 1 -> Tezgah 2 -> Tezgah 3 -> Tezgah 4 -> Tezgah 5 -> Tezgah 6 -> Tezgah 7 </td>
-                                <td><a href="#" class="btn btn-info btn-xs">Akışı Sil</a></td>
-                            </tr>
-                            </tbody>
-
+                            @foreach($biten_urunler as $biten_urun)
+                                <tbody>
+                                <tr>
+                                    <td>{{$biten_urun -> surec -> ad}}</td>
+                                    <td>{{$biten_urun -> urun_no}}</td>
+                                    <td>{{$biten_urun -> surec -> olusturulma_tarihi}}</td>
+                                    <td>{{$biten_urun -> olusturulma_tarihi}}</td>
+                                    <td>{{$biten_urun -> tezgah -> ad}}</td>
+                                </tr>
+                                </tbody>
+                            @endforeach
                         </table>
                     </div>
                 </div>
