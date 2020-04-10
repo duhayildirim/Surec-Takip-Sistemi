@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc759033-75b1-45cc-821b-30afef5422c4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/surec_takip.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/surec_takip.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/performans/isciler_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/performans/isciler_controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/performans/tezgahlar_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/performans/tezgahlar_controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/performans/uretim_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/performans/uretim_controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/biten_urunler_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/biten_urunler_controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/is_tanimi_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/is_tanimi_controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/surec_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/uretimhane/surec_controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/biten_urunler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/biten_urunler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_01_061042_create_kullanicilar_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_01_061042_create_kullanicilar_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/performans/isciler.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/performans/isciler.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/performans/tezgahlar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/performans/tezgahlar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/uretimhane/biten_urunler.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/uretimhane/biten_urunler.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/uretimhane/is_takip.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/uretimhane/is_takip.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,6 +206,7 @@
       <workItem from="1586429206112" duration="4436000" />
       <workItem from="1586442868419" duration="6394000" />
       <workItem from="1586459092229" duration="8674000" />
+      <workItem from="1586516610513" duration="1337000" />
     </task>
     <servers />
   </component>
@@ -268,10 +258,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="716" y="364" key="SymfonyComponentCompositeDataDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1585090660118" />
-    <state x="656" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1586459094950">
+    <state x="656" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1586516611027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1586429205954" />
+    <state x="656" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1586516611027" />
     <state x="656" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586459094950" />
     <state x="656" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586442868398" />
     <state x="1920" y="16" width="1296" height="846" maximized="true" key="dock-window-1" timestamp="1586347456525">

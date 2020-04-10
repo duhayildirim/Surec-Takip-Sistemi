@@ -19,7 +19,7 @@ class CreateKullanicilarTable extends Migration
             $table->string('soyad');
             $table->string('sifre');
             $table->string('email')->unique();
-            $table->string('rol')->default('işçi');
+            $table->string('rol')->default('İşçi');
             $table->timestamp('olusturulma_tarihi')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('guncelleme_tarihi')->default(DB::raw('CURRENT_TIMESTAMP on UPDATE CURRENT_TIMESTAMP'));
             $table->timestamp('silinme_tarihi')->nullable();

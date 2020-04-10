@@ -75,7 +75,7 @@
                         @foreach($isciler as $isci)
                         <tr>
                             <td>1</td>
-                            <td><span data-diameter="40" class="updating-chart">2,5,9,6,5,9,7,3,5,2,5,3,9,6,5,8,7,8,5,2</span>asdasd
+                            <td><span data-diameter="40" class="updating-chart">2,5,9,6,5,9,7,3,5,2,5,3,9,6,5,8,7,8,5,2</span>
                             </td>
                             <td>{{$isci -> ad }}</td>
                             <td><i class="fa fa-level-up"></i> 55%</td>
